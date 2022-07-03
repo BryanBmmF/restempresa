@@ -74,74 +74,39 @@ Response:
 "mensaje": "La empresa empresa1 se registro exitosamente"
 }
 
-2. Actualizar Empresa por ID:
+## 2. Actualizar Empresa por ID:
 
-Metodo: PUT
-Url: http://localhost:8082/api/rest/v1/empresa/actualizar/1
-Request:
-{
-"nombre": "empresa1 actualizada",
-"numeroNit": "87654321",
-"fechaFundacion": "1990-08-02",
-"direccion": "3 AV zona 3 San Pedro Sac. Guatemala"
-
-}
+	- Metodo: PUT
+	- Url: http://localhost:8082/api/rest/v1/empresa/actualizar/1
+	- Request:{"nombre": "empresa1 actualizada","numeroNit": "87654321","fechaFundacion": "1990-08-02","direccion": "3 AV zona 3 San Pedro Sac. Guatemala"}
 
 
-Response:
-{
-"mensaje": "La empresa con ID 1 se actualizo exitosamente"
-}
+	- Response:{"mensaje": "La empresa con ID 1 se actualizo exitosamente"}
 
-3. Recuperar Empresa por ID:
+## 3. Recuperar Empresa por ID:
 
-Metodo: GET
-Url: http://localhost:8082/api/rest/v1/empresa/buscarEmpresaID/1
+	- Metodo: GET
+	- Url: http://localhost:8082/api/rest/v1/empresa/buscarEmpresaID/1
 
-Response:
-{
-"id": 1,
-"nombre": "empresa1 actualizada",
-"numeroNit": "87654321",
-"fechaFundacion": "1990-08-01",
-"direccion": "3 AV zona 3 San Pedro Sac. Guatemala"
-}
+	- Response:{"id": 1,"nombre": "empresa1 actualizada","numeroNit": "87654321","fechaFundacion": "1990-08-01","direccion": "3 AV zona 3 San Pedro Sac. Guatemala"}
 
 
-4. Recuperar Empresa por Nombre:
+## 4. Recuperar Empresa por Nombre:
 
-Metodo: GET
-Url: http://localhost:8082/api/rest/v1/empresa/buscarEmpresaNombre/empresa1 actualizada
+	- Metodo: GET
+	- Url: http://localhost:8082/api/rest/v1/empresa/buscarEmpresaNombre/empresa1 actualizada
 
-Response:
-{
-"id": 1,
-"nombre": "empresa1 actualizada",
-"numeroNit": "87654321",
-"fechaFundacion": "1990-08-01",
-"direccion": "3 AV zona 3 San Pedro Sac. Guatemala"
-}
+	- Response:{"id": 1,"nombre": "empresa1 actualizada","numeroNit": "87654321","fechaFundacion": "1990-08-01","direccion": "3 AV zona 3 San Pedro Sac. Guatemala"}
 
-5. Recuperar Empresa por Numero de NIT:
+## 5. Recuperar Empresa por Numero de NIT:
 
-Metodo: GET
-Url: http://localhost:8082/api/rest/v1/empresa/buscarEmpresaNit/87654321
+	- Metodo: GET
+	- Url: http://localhost:8082/api/rest/v1/empresa/buscarEmpresaNit/87654321
+	- Response:{"id": 1,"nombre": "empresa1 actualizada","numeroNit": "87654321","fechaFundacion": "1990-08-01","direccion": "3 AV zona 3 San Pedro Sac. Guatemala"}
 
-Response:
-{
-"id": 1,
-"nombre": "empresa1 actualizada",
-"numeroNit": "87654321",
-"fechaFundacion": "1990-08-01",
-"direccion": "3 AV zona 3 San Pedro Sac. Guatemala"
-}
+## 6. Eliminar Empresa por ID:
 
-6. Eliminar Empresa por ID:
+	- Metodo: DELETE
+	- Url: http://localhost:8082/api/rest/v1/empresa/eliminar/1
 
-Metodo: DELETE
-Url: http://localhost:8082/api/rest/v1/empresa/eliminar/1
-
-Response:
-{
-"mensaje": "La empresa se elimino correctamente !!!"
-}
+	- Response:{"mensaje": "La empresa se elimino correctamente !!!"}
