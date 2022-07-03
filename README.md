@@ -1,35 +1,5 @@
 # restempresa
 
-# Programa 1
-
-- Repositorio:https://github.com/BryanBmmF/primos.git
-
-## Requisitos
-	- Tener instalado Java 11
-
-## Si solo se desea ejecutar el programa, abrir una terminal en esta carpeta y ejecutar el .jar de la siguiente manera:
-	- java -jar primosv2.jar
-
-## Si se desea compilar el codigo, abrir terminal en esta carpeta y ejecutar nuevamente:
-	- javac Primosv2.java 
-	- java Primosv2
-
-
-# Programa 2
-
-- Repositorio:https://github.com/BryanBmmF/palindromo.git
-
-## Requisitos
-- Tener instalado Java 11
-
-## Si solo se desea ejecutar el programa, abrir una terminal en esta carpeta y ejecutar el .jar (java -jar Palindromo.jar PALABRA_A_EVALUAR) de la siguiente manera:
-- java -jar Palindromo.jar reconocer
-
-## Si se desea compilar el codigo, abrir terminal en esta carpeta y ejecutar nuevamente:
-- javac Palindromo.java
-- java Palindromo reconocer
-
-
 # Programa 3
 
 ## Requisitos:
@@ -56,7 +26,7 @@
 
 # Ejemplos  API REST:
 
-1. Registrar Empresa:
+## 1. Registrar Empresa:
 
 Metodo: POST
 Url: http://localhost:8082/api/rest/v1/empresa/registrar
